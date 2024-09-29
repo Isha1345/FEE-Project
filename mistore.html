@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(242, 236, 229);
+        }
+
+        .nav-bar {
+            display: flex;
+            gap: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            height: 50px;
+            justify-content: space-between;
+        }
+
+        .nav-item {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .nav-item1 {
+            padding: 10px;
+            cursor: pointer;
+            align-items: end;
+            size: 20px;
+        }
+
+        .item1 {
+            color: #ff5733
+        }
+
+        .products-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: space-evenly;
+
+        }
+
+        .product-card {
+            width: 220px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-card:hover {
+            border: 2px solid black;
+        }
+
+        .discount {
+            color: #ff5733;
+            font-weight: bold;
+        }
+
+        .price {
+            font-size: 1.2em;
+            margin-top: 5px;
+        }
+
+        .promo-banner {
+            width: calc(100% - 40px);
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-image: url(./images/bg1.webp);
+            background-position: center;
+            height: 120px;
+            background-size: cover;
+        }
+
+        .promo-banner button {
+            padding: 10px 20px;
+            border: none;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 60px;
+            margin-left: 1200px;
+        }
+
+        .buy:hover {
+            border: 2px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="nav-bar">
+        <img src="./images/milogo.png">
+        <div class="nav-item item1">Store</div>
+        <div class="nav-item">Phone</div>
+        <div class="nav-item">TV & Smart Home</div>
+        <div class="nav-item">Tablet</div>
+        <div class="nav-item">LifeStyle</div>
+        <div class="nav-item1">Discover</div>
+        <div class="nav-item1">Support</div>
+        <div class="nav-item1"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="nav-item1"><i class="fa-solid fa-cart-shopping"></i></div>
+        <div class="nav-item1"><i class="fa-regular fa-address-book"></i></div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="products-section">
+        <div class="product-card">
+            <img src="./images/redmi.png" alt="Redmi Earphones">
+            <p class="discount">25% off</p>
+            <p>Redmi Earphones</p>
+            <p class="price">₹449</p>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/mi2.webp" alt="Mi Dual Driver Earphones">
+            <p class="discount">20% off</p>
+            <p>Mi Dual Driver In-ear Earphones</p>
+            <p class="price">₹799</p>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/sonicbass.webp" alt="Redmi Sonic Bass Wireless Earphones">
+            <p class="discount">30% off</p>
+            <p>Redmi Sonic Bass Wireless Earphones 2</p>
+            <p class="price">₹1299</p>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/speaker.webp" alt="Mi Portable Bluetooth Speaker">
+            <p class="discount">28% off</p>
+            <p>Mi Portable Bluetooth Speaker (16W)</p>
+            <p class="price">₹2499</p>
+        </div>
+
+        <!-- Promo Banner -->
+        <div class="promo-banner">
+            <button class="buy">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/adapter.webp" alt="Xiaomi 120W HyperCharge Adapter">
+            <p class="discount">50% off</p>
+            <p>Xiaomi 120W HyperCharge Adapter</p>
+            <p class="price">₹1299</p>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/chargecable.webp" alt="Xiaomi SonicCharge 2.0 Cable">
+            <p class="discount">40% off</p>
+            <p>Xiaomi SonicCharge 2.0 Cable</p>
+            <p class="price">₹299</p>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/dualport.webp" alt="Mi 18W Dual Port Charger">
+            <p class="discount">35% off</p>
+            <p>Mi 18W Dual Port Charger + Mi USB Cable 120cm</p>
+            <p class="price">₹599</p>
+        </div>
+    </div>
+</body>
+
+</html>
